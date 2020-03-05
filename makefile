@@ -1,15 +1,11 @@
-programas:
-	gcc -o ma ma.c parsers.c
-	gcc -o ag ag.c parsers.c
-	gcc -o sv sv.c parsers.c
-	gcc -o cv cv.c parsers.c
-
-teste:
-	gcc -o cvTester cvTester.c
+programs:
+	gcc -o articleManagement articleManagement.c parsers.c
+	gcc -o agregator agregator.c parsers.c
+	gcc -o server server.c parsers.c
+	gcc -o client client.c parsers.c
 
 clean:
 	rm artigos.txt
 	rm stocks.txt
 	rm vendas.txt
 	rm strings.txt
-	rm cvOutput.txt
